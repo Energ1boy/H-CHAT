@@ -1,0 +1,28 @@
+name: H-CHAT
+version: 1.0
+main: com.hindustries.hchat.HChatPlugin
+commands:
+  addword:
+    description: Adds a new word to the filter list.
+    usage: /addword <word>
+    permission: hchat.addword
+  removeword:
+    description: Removes a word from the filter list.
+    usage: /removeword <word>
+    permission: hchat.removeword
+  wordlist:
+    description: Shows the list of filtered words.
+    usage: /wordlist
+    permission: hchat.wordlist
+  filterhelp:
+    description: Shows help for the H-CHAT plugin.
+permissions:
+  hchat.addword:
+    description: Allows adding a new word to the chat filter.
+    default: op
+  hchat.removeword:
+    description: Allows removing a word from the chat filter.
+    default: op
+  hchat.wordlist:
+    description: Allows viewing the list of filtered words.
+    default: op
